@@ -1,5 +1,5 @@
 <%- if SiteSetting.sitemap_enabled? %>
 <%- unless SiteSetting.login_required? %>
-Sitemap: http://www.ltdwiki.com/uploads/default/original/1X/bc5675acea1d3e3c2b9e5e877e61bbb619342d58.xml
+Sitemap: <%= request.protocol %><%= request.host_with_port %>/sitemap.xml
 <% end %>
 <% end %>
